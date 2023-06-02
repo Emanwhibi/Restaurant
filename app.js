@@ -6,7 +6,7 @@ function Food(foodName ,type , price){
     this.type = type;
     this.price = price;
    menu.push(this);  
-}
+};
 
 function genrateRandom() {
     return Math.floor(Math.random() * (1000-5) + 1);
@@ -41,7 +41,7 @@ function handler(e){
     e.preventDefault();
     let foodName = e.target.foodName.value;
     let type = e.target.type.value;
-    let Price = e.target.price.value;
+    let price = e.target.price.value;
     console.log(foodName,type,price);
 
     let food = new food(foodName, type , price);
